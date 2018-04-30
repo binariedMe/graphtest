@@ -1,6 +1,6 @@
-const MongoConnection = require('../provider/Mongo');
+const mongoose = require('../provider/Mongo');
 
-const Reservation = MongoConnection.model('Reservation', {
+const Reservation = mongoose.model('Reservation', {
   id: String,
   name: String,
   hotelName: String,
